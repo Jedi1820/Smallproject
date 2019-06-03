@@ -1,0 +1,28 @@
+<!--pages/oen/one.wxml-->
+<text class='qw'></text>
+<view class='qq'>
+  <view class='topview'>
+      ZAKER新闻阅读
+  </view>
+  <view class='midview'>
+
+      <movable-area class='mid1'>
+       <view class='mid1'>
+  
+        <movable-view class='one'direction="all"></movable-view>
+        <movable-view class='two'direction="all"></movable-view>
+
+       </view>
+      </movable-area>
+      <view class='mid2'>
+
+        <view class='three'></view>
+        <view class='four'></view>
+        <view class='five'></view>
+
+      </view>
+  </view>
+  <view class='botview'>
+   微信小程序开发
+  </view>
+</view>

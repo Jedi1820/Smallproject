@@ -1,0 +1,96 @@
+<view class="base">
+  <view class="top">
+     <swiper indicator-dots="{{true}}" vertical="{{false}}" autoplay="{{true}}" interval="{{2000}}" duration="{{500}}" indicator-active-color="red" circular="{{true}}" class="test">
+        <swiper-item>
+          <navigator url="../three/three" class="n1">
+            <image src="../images/1.png" class="pic1"></<image>
+          </navigator>
+        </swiper-item>
+      
+        <swiper-item>
+          <navigator url="../three/three" class="n1">
+            <image src="../images/1.png" class="pic1"></<image>
+          </navigator>
+        </swiper-item>
+
+        <swiper-item>
+          <navigator url="../three/three" class="n1">
+            <image src="../images/1.png" class="pic1"></<image>
+          </navigator>
+        </swiper-item>
+
+      </swiper>
+      </view>
+     <view class="mid">
+        Ching's project!
+
+     </view>
+
+     <view class="bot">
+       <scroll-view scroll-y="{{true}}" class="test1">
+         <view class="test2">
+           <view class="cell">
+             <image src="../images/1.png" class="pic"></image>
+           </view>
+           <view class="cell">
+             <image src="../images/2.png" class="pic"></image>
+           </view>
+           <view class="cell">
+             <image src="../images/3.png" class="pic"></image>
+           </view>
+           <view class="cell">
+             <image src="../images/4.png" class="pic"></image>
+           </view>
+           <view class="cell">
+             <image src="../images/5.png" class="pic"></image>
+           </view>
+           <view class="cell">
+             <image src="../images/6.png" class="pic"></image>
+           </view>
+           <view class="cell">
+             <image src="../images/7.png" class="pic"></image>
+           </view>
+           <view class="cell">
+             <image src="../images/8.png" class="pic"></image>
+           </view>
+           <view class="cell">
+             <image src="../images/9.png" class="pic"></image>
+           </view>
+           <view class="cell">
+             <image src="../images/10.png" class="pic"></image>
+           </view>
+           <view class="cell">
+             <image src="../images/11.png" class="pic"></image>
+           </view>
+           <view class="cell">
+             <image src="../images/12.png" class="pic"></image>
+           </view>
+           <view class="cell">
+             <image src="../images/13.png" class="pic"></image>
+           </view>
+           <view class="cell">
+             <image src="../images/14.png" class="pic"></image>
+           </view>
+           <view class="cell">
+             <image src="../images/15.png" class="pic"></image>
+           </view>
+           <view class="cell">
+             <image src="../images/16.png" class="pic"></image>
+           </view>
+           <view class="cell">
+             <image src="../images/17.png" class="pic"></image>
+           </view>
+           <view class="cell">
+             <image src="../images/18.png" class="pic"></image>
+          </view>
+         </view>
+       </scroll-view>
+      
+     </view>
+
+     <view class="last">
+       版权所有，翻版必究！
+
+     </view>
+
+</view>

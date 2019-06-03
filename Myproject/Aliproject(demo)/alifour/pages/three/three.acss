@@ -1,0 +1,107 @@
+.base
+{
+  width: 100%;
+  height: 100vh;
+  background-color: aquamarine;
+  opacity: 0.5;
+}
+.top
+{
+  width: 100%;
+  height: 10%;
+  background-color: darkturquoise;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: 10px; */
+}
+.ipview
+{
+  width: 60%;
+  height: 60%;
+  border: 1px solid gainsboro;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+.mid
+{
+  width: 100%;
+  height: 20%;
+  background-color:#00BFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mid1
+{
+  width: 35%;
+  height: 100%;
+  margin-left: 20px;
+  /* border: 1px solid black; */
+}
+.mid2
+{
+  width:60%;
+  height: 100%;
+  /* border: 1px solid red;  */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: blue;
+  opacity: 1;
+}
+.pic1
+{
+  width: 100%;
+  height: 100%;
+}
+.sview
+{
+  width: 100%;
+  height: 70%;
+  
+  /* opacity: 0.6; */
+}
+.sview1
+{
+  width: 100%;
+  height: 70%;
+  background-image: linear-gradient(to bottom right,#00BFFF	#40E0D0);
+  /* background-color: white; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.cell
+{
+  width: 45%;
+  height: 40%;
+  margin: 5px;
+  background-color: white;
+  opacity: 0.8;
+  border-radius: 10px;
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: blue;
+}
+.cell1
+{
+  width: 40%;
+  height: 55%;
+  border: 1px solid red;
+}
+.cell2
+{
+  width: 60%;
+  height: 100%;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: blue；
+}

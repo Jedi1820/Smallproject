@@ -1,0 +1,29 @@
+<!--pages/ inquire/inquire.wxml-->
+<view class='cview'>
+  <view class='topview'>
+    <icon type='search' size='15' color='black' size='22'></icon>
+    <input class="inview" placeholder='输入手机号/身份证号/银行卡号' bindconfirm='searchnumber'></input>
+   </view>
+
+
+  <view  class="contentview">
+     <view class="{{phone ? 'phoneshow' : 'phonehide'}}">
+      <view class='phoneview'>
+        <view>{{phonedata.mobile}}</view>
+        <view>{{phonedata.phoneArea}}</view>
+      </view>
+      </view>
+    
+     <view  class="{{snum ? 'snumshow' : 'snumhide'}}">
+          <view  class="phoneview">
+                <view>{{numdata.area}}</view>
+                <view>{{numdata.birthday}}</view>
+                <view>{{numdata.cnEra}}</view>
+                <view>{{numdata.constellation}}</view>
+                <view>{{numdata.sex}}</view>
+                <view>{{numdata.zodiac}}</view>
+          </view>
+ 
+    </view>
+  </view>
+</view>

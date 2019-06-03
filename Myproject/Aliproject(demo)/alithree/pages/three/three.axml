@@ -1,0 +1,70 @@
+<view class="base"> 
+  <view class="top">
+
+  </view>
+  <view class='mid'>
+   <scroll-view class='test' scroll-y="{{true}}">
+   <view class='test1'>
+      <view class='cell'></view>
+      <view class='cell'></view>
+      <view class='cell'></view>
+      <view class='cell'></view>
+      <view class='cell'></view>
+      <view class='cell'></view>
+      <view class='cell'></view>
+      <view class='cell'></view>
+      <view class='cell'></view>
+      <view class='cell'></view>
+      <view class='cell'></view>
+      <view class='cell'></view>
+      <view class='cell'></view>
+      <view class='cell'></view>
+      <view class='cell'></view>
+      <view class='cell'></view>
+      <view class='cell'></view>
+      <view class='cell'></view>
+      <view class='cell'></view>
+      <view class='cell'></view>
+      <view class='cell'></view>
+      <view class='cell'></view>
+      <view class='cell'></view>
+      <view class='cell'></view>
+      <view class='cell'></view>
+      <view class='cell'></view>
+      <view class='cell'></view>
+      <view class='cell'></view>      
+      <view class='cell'></view>
+      <view class='cell'></view>
+      <view class='cell'></view>
+      <view class='cell'></view>
+      <view class='cell'></view>
+      <view class='cell'></view>
+      <view class='cell'></view>
+      <view class='cell'></view>
+      <view class='cell'></view>
+      <view class='cell'></view>
+      <view class='cell'></view>
+      <view class='cell'></view>
+      <view class='cell'></view>      
+      <view class='cell'></view>
+      <view class='cell'></view>
+      <view class='cell'></view>
+      <view class='cell'></view>
+      <view class='cell'></view>
+      <view class='cell'></view>
+      <view class='cell'></view>
+      <view class='cell'></view>
+      <view class='cell'></view>
+      <view class='cell'></view>
+      <view class='cell'></view>
+      <view class='cell'></view>
+      <view class='cell'></view>
+    </view>
+   </scroll-view>
+  </view>
+  <view class="bot">
+
+  </view>
+
+</view>
+

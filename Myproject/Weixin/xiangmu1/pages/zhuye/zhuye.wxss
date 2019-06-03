@@ -1,0 +1,64 @@
+/* pages/zhuye/zhuye.wxss */
+.base
+{
+  width: 100%;
+  height: 100vh;
+}
+.mid
+{
+  width: 100%;
+  height: 100%;
+
+}
+.mid1
+{
+  width: 100%;
+  height: 40%;
+}
+.mid2
+{
+  width: 100%;
+  height: 60%;
+}
+.sw
+{
+  width: 100%;
+  height: 100%;
+}
+.img
+{
+  width: 100%;
+  height: 100%;
+}
+.sc
+{
+  width: 100%;
+  height: 100%;
+}
+.cell
+{
+  width: 90px;
+  height: 90px;
+  /* border: 1px solid red; */
+  border-radius: 8px;
+  box-shadow: 5px 5px 10px pink;
+  margin: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sc1
+{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  
+}
+.img1
+{
+  width: 40px;
+  height: 40px;
+}

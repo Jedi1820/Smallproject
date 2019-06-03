@@ -1,0 +1,2 @@
+<!--pages/5.5/map.wxml-->
+<map latitude="{{latitude}}" longitude="{{longitude}}" controls='{{controls}}' class='map' ></map>

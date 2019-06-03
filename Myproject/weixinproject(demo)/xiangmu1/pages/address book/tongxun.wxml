@@ -1,0 +1,35 @@
+<!--pages/address book/tongxun.wxml-->
+<view class='base'>
+   <view class='top'>
+      <image class='img' bindtap='back' src='{{menu}}'></image>
+      <text class='text'>CONTACTS</text>
+      <view class="mid1">
+         <image class='pic3' src='http://ching.natapp1.cc/images/add.png'></image>
+      </view>
+   </view>
+   <view class='mid'>
+      <block wx:for="{{contacts}}">
+          <view class='cell' hover-class='click' bindtap='click' data-phonenumber='{{item.phoneNumber}}'>
+              <view class='left'>
+                 <image src='{{item.person}}' class='pic'></image>
+              </view>
+              <view class='name'>
+                 <view class='name1'>
+                    <text>{{item.name}}</text>
+                 </view>
+              <view class='phone'>
+                 <text>{{item.about}}</text>
+              </view>
+              </view>
+              <view class='right'>
+                  <image src='{{item.call}}' class='pic1'></image>
+                  <image src='{{item.sms}}' class='pic1'></image>
+              </view>
+              <view class='status'>
+                  <image src='{{item.status}}' class='pic2'></image>
+              </view>
+          </view>
+      </block>
+   </view>
+   
+</view>

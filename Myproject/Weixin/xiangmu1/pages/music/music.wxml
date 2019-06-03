@@ -1,0 +1,50 @@
+<!--pages/music/music.wxml-->
+<view  class='base'>
+   <view class='top'>
+      <view class='top1'>
+         <image class='img' bindtap='back' src='http://ching.natapp1.cc/images/back.png'></image>       
+      </view>
+      <view class='top2'>
+         音乐
+      </view>
+      <view class='top3'> 
+         <image class='img' src='http://ching.natapp1.cc/images/menu.png'></image>
+      </view>
+   </view>
+   <view class='mid'>
+   <scroll-view scroll-y class='sc'>
+      <block  wx:for="{{music}}">
+        
+        <view class='cell' hover-class='bianse' bindtap='click' data-name='{{item.name}}'
+        data-author='{{item.author}}'
+        data-img='{{item.img}}'
+        data-url='{{item.url}}'>
+           <view class='mid1'>
+              <image class='pic' src='{{item.img}}'></image>
+           </view>
+           <view class='mid2'>
+              <view class='text1'>
+                <text>{{item.name}}</text>
+              </view>
+              <view class='text2'>
+                <text>{{item.author}}</text>
+              </view>
+           </view>
+           <view class='mid3'>
+              <image class='pic1' src='http://ching.natapp1.cc/images/more.png'></image>
+           </view>
+        </view>
+        
+      </block>
+      </scroll-view>
+   </view>
+   <view class='bot'>
+      <view class='bot1'>
+         <audio id="ad" controls='controls' name='{{name}}' author='{{author}}'
+            poster='{{img}}' src='{{url}}' ></audio>
+      </view>
+      <view class='bot2'>
+         <image class='pic2' src='http://ching.natapp1.cc/images/up.png'></image>
+      </view>
+   </view>
+</view>

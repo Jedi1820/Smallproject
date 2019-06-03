@@ -1,0 +1,92 @@
+<!--pages/one/one.wxml-->
+<view class='base'>
+  <view class='top'>
+     <swiper indicator-dots='{{true}}' autoplay='{{true}}' indicator-active-color='{{true}}' interval='{{2000}}' duration='{{3000}}' circular='{{true}}' class='swview'>
+     <navigator url='../one/one'>
+        <swiper-item> 
+           <image src='../images/1.png' class="pic1"></image>
+        </swiper-item>
+     </navigator>
+     <navigator url='../two/two'>
+        <swiper-item>
+           <image src='../images/2.png' class="pic1"></image>
+        </swiper-item>
+     </navigator>
+     <navigator url='../three/three'>
+        <swiper-item>
+           <image src='../images/3.png' class="pic1"></image>
+        </swiper-item>
+     </navigator>
+     </swiper>
+  </view>
+
+  <view class='mid'>
+     Ching's project
+  </view>
+
+  <view class='bot'>
+     <scroll-view  scroll-y='{{true}}' class='scview'>
+       <view class='test'>
+          <view class='cell'>
+            <image src='../images/a1.png' class='pic'></image>
+          </view>
+          <view class='cell'>
+            <image src='../images/a2.png' class='pic'></image>
+          </view>
+          <view class='cell'>
+            <image src='../images/a3.png' class='pic'></image>
+          </view>
+          <view class='cell'>
+            <image src='../images/4.png' class='pic'></image>
+          </view>
+          <view class='cell'>
+            <image src='../images/5.png' class='pic'></image>
+          </view>
+          <view class='cell'>
+            <image src='../images/6.png' class='pic'></image>
+          </view>
+          <view class='cell'>
+            <image src='../images/7.png' class='pic'></image>
+          </view>
+          <view class='cell'>
+            <image src='../images/8.png' class='pic'></image>
+          </view>
+          <view class='cell'>
+            <image src='../images/9.png' class='pic'></image>
+          </view>
+          <view class='cell'>
+            <image src='../images/10.png' class='pic'></image>
+          </view>
+          <view class='cell'>
+            <image src='../images/11.png' class='pic'></image>
+          </view>
+          <view class='cell'>
+            <image src='../images/12.png' class='pic'></image>
+          </view>
+          <view class='cell'>
+            <image src='../images/13.png' class='pic'></image>
+          </view>
+          <view class='cell'>
+            <image src='../images/14.png' class='pic'></image>
+          </view>
+          <view class='cell'>
+            <image src='../images/15.png' class='pic'></image>
+          </view>
+          <view class='cell'>
+            <image src='../images/16.png' class='pic'></image>
+          </view>
+          <view class='cell'>
+            <image src='../images/17.png' class='pic'></image>
+          </view>
+          <view class='cell'>
+            <image src='../images/18.png' class='pic'></image>
+          </view>
+       </view>
+     </scroll-view>
+  </view>
+
+  <view class='last'>
+      版权所有，翻版必究！
+  </view>
+
+</view>

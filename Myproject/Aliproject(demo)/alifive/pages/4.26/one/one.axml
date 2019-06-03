@@ -1,0 +1,24 @@
+<view class="base">
+   <view class="top"> 
+      <input class="inview" placeholder="输入身份证/手机号/银行卡"  onInput="search"/>
+      <button class="but" onTap="but" type="search">查询</button>
+   </view>
+
+   <view class="mid">
+         <view  class="{{phone?'show':'hide'}}">
+               
+              <text>{{phoneInfo}}</text>
+              
+         </view>
+         <view  class="{{Id?'show':'hide'}}">
+            
+                   <view>{{Id.area}}</view>
+                   <view>{{Id.birthday}}</view>
+                   <view>{{Id.cnEra}}</view>
+                   <view>{{Id.constellation}}</view>
+                   <view>{{Id.sex}}</view>
+                   <view>{{Id.zodiac}}</view>
+            
+         </view>
+   </view>
+</view>

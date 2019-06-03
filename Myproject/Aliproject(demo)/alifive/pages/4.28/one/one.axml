@@ -1,0 +1,16 @@
+<view class="base">
+   <block a:for="{{music}}">
+      <view class="cell" onTap="muclick" data-url="{{item.url}}" data-img="{{item.img}}"
+                                  data-name="{{item.name}}" data-author="{{item.author}}">
+           <view class="img">
+             <image src="{{item.img}}" class="pic" />
+           </view>
+           <view>
+             {{item.name}}
+           </view>
+           <view>
+             {{item.author}}
+           </view>
+      </view>
+   </block>
+</view>

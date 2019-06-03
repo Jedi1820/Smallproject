@@ -1,0 +1,16 @@
+<!--pages/two/two.wxml-->
+<view class='cview'>
+  <view  class='test1'>
+     <view class='cell' data-value="china" bindtap='changelanguage'>中文</view>
+     <view class='cell' data-value="english" bindtap='changelanguage'>English</view>
+  
+  </view>
+  <view  class='test2'>
+
+     <button>{{languageobjs.title}}</button>
+     <button>{{languageobjs.text}}</button>
+  
+  </view>
+
+
+</view>

@@ -1,0 +1,87 @@
+
+.base
+{
+  width: 100%;
+  height: 100vh;
+}
+.top
+{
+  width: 100%;
+  height: 30%;
+}
+.mid
+{
+  width: 100%;
+  height: 8%;
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 2px;
+
+}
+.bot
+{
+  width: 100%;
+  height: 54%;
+  background-image: linear-gradient(to bottom right,#FFB6C1,#E0FFFF);
+}
+.last
+{
+  width: 100%;
+  height: 8%;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 4px;
+}
+.test
+{
+  width: 100%;
+  height: 100%;
+}
+.pic1
+{
+  width: 100%;
+  height: 100%
+}
+.test1
+{
+  width: 100%;
+  height: 100%;
+}
+.test2
+{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.cell
+{
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  background-image: linear-gradient(to bottom left,#fff,#ccc);
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 5px 20px #FFB6C1;
+}
+.pic
+{
+  width: 60%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.n1
+{
+  width: 100%;
+  height: 100%;
+}

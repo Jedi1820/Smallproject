@@ -1,0 +1,18 @@
+<!--pages/four1/four1.wxml-->
+<swiper indicator-dots='{[true}}' indicator-active-color='red' class='swview'>
+
+    <block wx:for="{{swiperdata}}">
+        <swiper-item>
+           <view class='test'>
+             <image class='pic' src='{{item}}'></image>
+             <block wx:if="{{index==swiperdata.length-1}}">
+                <button class='but' bindtap='onclick'>
+                 欢迎使用
+                </button>
+             </block>
+           </view>
+        </swiper-item>
+    </block>
+
+
+</swiper>

@@ -1,0 +1,41 @@
+<view class="base">
+    <view class="top">
+       
+       <input class="ipview" type="text" onInput="inputVal" placeholder="输入城市" auto-focus />
+      <view onTap="searchweather">
+        <icon type="search" size="30" color="blue" />
+      </view>
+    
+    </view>
+    <view class="mid">
+      <view class="mid1">
+        <image src="http://localhost:8800/images/w1.png" class="pic1"/>
+      </view>
+      <view class="mid2">
+          <text>{{currentweather.date}}</text>
+          <text>{{currentweather.temperature}}</text>
+          <text>{{currentweather.weather}}</text>
+          <text>{{currentweather.direct}}</text>
+          <!-- <text>{{currentweather.wid.day}}</text> -->
+      </view>
+    </view>
+    <scroll-view class="sview" scroll-y="{{true}}">
+      <view class="sview1">
+       <block a:for="{{futureweather}}">
+         <block  a:if="{{index>0}}">
+         <view class="cell">
+           <view class="cell1">
+
+           </view>
+           <view class="cell2">
+             <text>{{item.date}}</text>
+             <text>{{item.temperature}}</text>
+             <text>{{item.weather}}</text>
+             <text>{{item.direct}}</text>
+           </view>
+         </view>
+         </block>
+       </block>
+      </view>
+    </scroll-view>
+</view>

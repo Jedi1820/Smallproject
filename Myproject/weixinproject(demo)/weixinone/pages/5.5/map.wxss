@@ -1,0 +1,6 @@
+/* pages/5.5/map.wxss */
+.map
+{
+  width: 100%;
+  height: 500px;
+}

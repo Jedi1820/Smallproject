@@ -1,0 +1,6 @@
+<!--pages/4.30/one.wxml-->
+<view class='base'>
+   <view class='top'>
+      <image class='scan' bindtap='click' src='../image/scan.png'></image>
+   </view>
+</view>

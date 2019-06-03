@@ -1,0 +1,20 @@
+<!--pages/yindaoye/yindaoye.wxml-->
+
+    <swiper class='swview' indicator-dots='{{true}}' indicator-active-color='red' autoplay='{{false}}'>
+       <block wx:for="{{img}}">
+          <swiper-item>
+             <view class='one'>
+                  <image class='img' src='{{item}}'></image>
+               <block wx:if="{{index==img.length-1}}">
+               
+                   <button class='but' bindtap='onclick'>
+                    <cover-image src='http://ching.natapp1.cc/images/yindao.png' class='cov'>         
+        </cover-image>
+                      <text class='tx'>欢迎使用</text>
+                   </button>
+               </block>
+             </view>
+          </swiper-item>    
+        </block>
+    </swiper>
+   

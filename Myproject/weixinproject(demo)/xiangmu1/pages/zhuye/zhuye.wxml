@@ -1,0 +1,52 @@
+<!--pages/zhuye/zhuye.wxml-->
+<view class='base'>
+   <view class='mid'>
+      <view class='mid1'>
+         <swiper class='sw' indicator-dots='{{true}}' indicator-active-color='red' circular='{{true}}' autoplay='{{true}}'>
+             <swiper-item>
+               <image class='img' src='http://ching.natapp1.cc/images/a1.jpg'></image>
+             </swiper-item>
+             <swiper-item>
+                <image class='img' src='http://ching.natapp1.cc/images/a2.jpg'></image>
+             </swiper-item>
+             <swiper-item>
+                <image class='img' src='http://ching.natapp1.cc/images/a3.jpg'></image>
+             </swiper-item>
+         </swiper>
+      </view>
+
+      <view class='mid2'>
+          <scroll-view class='sc' scroll-y="{{true}}">
+            <view class='sc1'>
+                  <view class='cell' bindtap='click1'>
+                     <image class='img1' src='http://ching.natapp1.cc/images/zhuye/news.png'></image>
+                  </view>
+                  <view class='cell' bindtap='click2' >
+                     <image class='img1' src='http://ching.natapp1.cc/images/zhuye/tongxun.png'></image>
+                  </view>
+                  <view class='cell' bindtap='click3'>
+                     <image class='img1' src='http://ching.natapp1.cc/images/zhuye/chaxun.png'></image>
+                  </view>
+                  <view class='cell' bindtap='click4'>
+                     <image class='img1' src='http://ching.natapp1.cc/images/zhuye/music.png'></image>
+                  </view>
+                  <view class='cell' bindtap='click5'>
+                     <image class='img1' src='http://ching.natapp1.cc/images/zhuye/video.png'></image>
+                  </view>
+                  <view class='cell' bindtap='click6'>
+                     <image class='img1' src='http://ching.natapp1.cc/images/zhuye/weather.png'></image>
+                  </view>
+                  <view class='cell' bindtap='click7'>
+                     <image class='img1' src='http://ching.natapp1.cc/images/zhuye/mine.png'></image>
+                  </view>
+                  <view class='cell' bindtap='click8'>
+                     <image class='img1' src='http://ching.natapp1.cc/images/scan.png'></image>
+                  </view>
+                  <view class='cell' bindtap='click9'>
+                     <image class='img1' src='http://ching.natapp1.cc/images/zhuye/more.png'></image> 
+                  </view>
+             </view>
+          </scroll-view>
+      </view>
+   </view>
+</view>

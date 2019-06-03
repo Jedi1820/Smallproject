@@ -1,0 +1,42 @@
+<!--pages/video/video.wxml-->
+<view class='base'>
+   <view class='top'>
+     <image class='pic' src='http://ching.natapp1.cc/images/back1.png' bindtap='click'></image>
+     <view class='test'>
+        <text>视频</text>
+     </view>
+   </view>
+     <view class='mid'>
+       <view class='cell1' bindtap='btn' data-item='0'>音乐</view>
+       <view class='cell1' bindtap='btn' data-item='1'>娱乐</view>
+       <view class='cell1' bindtap='btn' data-item='2'>电影</view>
+       <view class='cell1' bindtap='btn' data-item='3'>科技</view>
+       <view class='cell1' bindtap='btn' data-item='4'>美食</view>
+     </view>
+      <view class='one'>
+        <swiper class='sw' current='{{test}}' indicator-dots='{{false}}' vertical='{{false}}' autoplay='{{false}}' scroll-y="{{true}}">
+        <swiper-item>
+              <scroll-view scroll-y class='two'>
+                 <block wx:for="{{videodata}}">
+                    <view class='cell'>
+                       <video class='vdview' controls='controls' src='{{item.videopath}}'></video>
+                     <view class='text'>
+                        <view class='text1'>
+                          <text>{{item.name}}</text>
+                        </view>
+                        <view class='text2'>
+                          <text>{{item.author}}</text>
+                        </view>
+                      </view>
+                     </view>
+                 </block>
+              </scroll-view>
+            </swiper-item>
+            
+            <swiper-item>1</swiper-item>
+            <swiper-item>2</swiper-item>
+            <swiper-item>3</swiper-item>
+            <swiper-item>4</swiper-item>
+          </swiper>
+       </view>
+</view>

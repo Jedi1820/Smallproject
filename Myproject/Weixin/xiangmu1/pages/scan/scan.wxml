@@ -1,0 +1,9 @@
+<!--pages/scan/scan.wxml-->
+<view class='base'>
+  <view class='top'>
+      <image class='img' src='http://ching.natapp1.cc/images/back1.png'></image>
+   </view>
+   <view class='mid'>
+       <image class='scan' bindtap='click' src='http://ching.natapp1.cc/images/scan.png'></image>
+   </view>
+</view>

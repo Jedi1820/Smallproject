@@ -1,0 +1,56 @@
+<view class="base">
+
+<view class="top">
+   <swiper class="swview1" indicator-dots="{{true}}" circular="{{true}}" indicator-active-color="red"
+                  autoplay="{{true}}" interval="{{4000}}" duration="{{2000}}">
+      <block a:for="{{image}}">
+          <swiper-item> 
+              <image src="{{item}}" class="image" />
+          </swiper-item>
+      </block>
+    </swiper>
+</view>
+
+<view class="mid">
+  <swiper class="swview" current="{{test}}" autoplay="{{false}}">
+    <swiper-item>
+       <scroll-view class="one" scroll-y="{{true}}">
+         <block a:for="{{news}}">
+            <view class="cell1">
+              <view class="one1">
+                <image src="{{item.thumbnail_pic_s}}" class="pic" />
+              </view>
+              <view class="one2">
+                {{item.title}}
+              </view>
+            </view>
+         </block>
+       </scroll-view>
+    </swiper-item>
+    <swiper-item>
+       <view class="video">
+            <video src="http://ching.natapp1.cc/video/20190123_141724.mp4"></video>
+       </view>
+    </swiper-item>
+    <swiper-item>
+       <view>第三页</view>
+    </swiper-item>
+    <swiper-item>
+       <view>第四页</view>
+    </swiper-item>
+    <swiper-item>
+       <view>第五页</view>
+    </swiper-item>
+    
+
+  </swiper>
+</view>
+<view class="bot">
+  <view class="cell" data-item="0" onTap="click">资讯</view>
+  <view class="cell" data-item="1" onTap="click">视频</view>
+  <view class="cell" data-item="2" onTap="click">天气</view>
+  <view class="cell" data-item="3" onTap="click">音乐</view>
+  <view class="cell" data-item="4" onTap="click">我的</view>
+
+</view>
+</view>

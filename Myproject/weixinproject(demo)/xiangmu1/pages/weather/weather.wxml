@@ -1,0 +1,47 @@
+<!--pages/weather/weather.wxml-->
+<view class='base'>
+   <view class='top'>
+      <view class='top1'>
+         <image class='img' src='http://ching.natapp1.cc/images/back1.png' bindtap='bt'></image>
+      </view>
+      <view class='top2'>
+         <input class="ipview" type='text' bindinput='input' placeholder='输入城市' focus='{{false}}'>
+         </input>
+         <view bindtap='searchweather'>
+            <icon type="search" size="30" color="white" />
+        </view>
+      </view>
+   </view>
+   <view class='mid'>
+       <view class='mid1'>
+           <image class='img1' src='{{weather[0].path}}'></image>
+       </view>
+       <view class='mid2'>
+          <text>{{currentweather.week}}</text>
+          <text>{{currentweather.temperature}}</text>
+          <text>{{currentweather.weather}}</text>
+          <text>{{currentweather.wind}}</text>
+       </view>
+   </view>
+   <view class='bot'>
+       <scroll-view class="sview" scroll-x="{{true}}">
+         <view class="sview1">
+           <block wx:for="{{futureweather}}">
+             <block  wx:if="{{index>0}}">
+               <view class="cell">
+                 <view class="cell1">
+                    <image class='img2' src='{{weather[index].path}}'></image>
+                 </view>
+                 <view class="cell2">
+                    <text>{{item.week}}</text>
+                    <text>{{item.temperature}}</text>
+                    <text>{{item.weather}}</text>
+                    <text>{{item.wind}}</text>
+                 </view>
+               </view>
+             </block>
+           </block>
+         </view>
+      </scroll-view>
+   </view>
+</view>

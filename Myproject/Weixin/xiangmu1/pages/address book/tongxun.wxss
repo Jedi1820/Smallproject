@@ -1,0 +1,134 @@
+/* pages/address book/tongxun.wxss */
+.base
+{
+  width: 100%;
+  height: 100vh;
+  /* background-color: #2d3e50; */
+}
+.click
+{
+  background-color: #5CACEE;
+}
+.top
+{
+  width: 100%;
+  height: 10%;
+  background-color: #01caa8;
+  display: flex;
+  align-items: center;
+}
+.img
+{
+  width: 25px;
+  height: 25px;
+  margin-left: 30px;
+}
+.text
+{
+  width: 120px;
+  height: 30px;
+  font-size: 20px;
+  font-family: 微软雅黑;
+  color: white;
+  margin-left: 78px;
+}
+.mid
+{
+  width: 100%;
+  height: 90%;
+  /* border: 1px solid red; */
+}
+.cell
+{
+  width: 100%;
+  height: 15%;
+  /* border: 1px solid paleturquoise; */
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+  border-bottom: 1px solid gainsboro;
+  opacity: 0.8;
+}
+.left
+{
+  width: 66px;
+  height: 62px;
+  margin-left: 20px;
+  /* border: 1px solid red; */
+  border-radius: 66px;
+}
+.name
+{
+  width: 50%;
+  height: 90%;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.name1
+{
+  width: 50%;
+  height: 50%;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 25px;
+}
+.phone
+{
+  width: 50%;
+  height: 50%;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+  margin-left: 20px;
+  opacity: 0.6;
+}
+.right
+{
+  width: 20%;
+  height: 90%;
+  /* border: 1px solid red; */
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  margin: 10px;
+}
+.status
+{
+  width: 5%;
+  height: 90%;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+.pic
+{
+  width: 100%;
+  height: 100%;
+  /* box-shadow: 2px 2px 2px blue; */
+}
+.pic1
+{
+  width: 45%;
+  height: 36%;
+  margin: 5px;
+}
+.pic2
+{
+  width: 50px;
+  height: 20px;
+}
+.pic3
+{
+  width: 25px;
+  height: 25px;
+  margin-left: 60px;
+}

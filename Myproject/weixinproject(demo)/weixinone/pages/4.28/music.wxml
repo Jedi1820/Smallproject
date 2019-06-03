@@ -1,0 +1,4 @@
+<!--pages/4.28/music.wxml-->
+<audio id="ad" controls='controls' name='{{name}}' author='{{author}}'
+ poster='{{img}}' src='{{url}}'></audio>
+ <image src='{{img}}'></image>

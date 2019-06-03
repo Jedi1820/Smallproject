@@ -1,0 +1,75 @@
+/* pages/three1/three1.wxss */
+.base
+{
+  width: 100%;
+  height: 100vh;
+  background-color: wheat;
+}
+.top
+{
+  width: 100%;
+  height: 30%;
+  background-color: white;
+}
+.mid
+{
+  width: 100%;
+  height: 8%;
+  background-color: skyblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bot
+{
+  width: 100%;
+  height: 54%;
+  background-color: papayawhip;
+}
+.last
+{
+  width: 100%;
+  height: 8%;
+  background-color: lightpink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 10px;
+  color: red;
+}
+.swview
+{
+  width: 100%;
+  height: 100%;
+}
+.pic1
+{
+  width: 100%;
+  height: 100%;
+}
+.scview
+{
+  width: 100%;
+  height: 100%;
+}
+.test
+{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.cell
+{
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  box-shadow:5px 5px 10px red;
+  border-radius: 10px;
+  margin: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

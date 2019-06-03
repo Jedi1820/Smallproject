@@ -1,0 +1,21 @@
+<scroll-view  class="sview" scroll-y="{{true}}">
+      <block  a:for="{{personPhonedatas}}">
+
+         <view hover-class="bg"  class="cview" onTap="callphone"  data-phonenum="{{item.phoneNumber}}">
+            <view class="oneview">
+               <image src="{{item.imagpath01}}" class="cming"  />
+            </view>
+            <view class="twoview">
+               <text>{{item.name}}</text>
+            </view>
+            <view class="threeview" >
+               <image src="{{item.imagpath02}}" class="cming"  />
+            </view>
+
+        </view>
+
+
+      </block>
+
+
+</scroll-view>

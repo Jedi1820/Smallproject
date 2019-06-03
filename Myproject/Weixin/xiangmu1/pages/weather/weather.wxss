@@ -1,0 +1,141 @@
+/* pages/weather/weather.wxss */
+.base
+{
+  width: 100%;
+  height: 100vh;
+  background-color: #303644;
+}
+.top
+{
+  width: 100%;
+  height: 8%;
+  /* border: 1px solid white; */
+  display: flex;
+  align-items: center;
+}
+.top1
+{
+  width: 15%;
+  height: 100%;
+  /* border: 1px solid white; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top2
+{
+  width: 85%;
+  height: 100%;
+  /* border: 1px solid white; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img
+{
+  width: 30px;
+  height: 30px;
+}
+.ipview
+{
+  width: 70%;
+  height: 80%;
+  border: 1px solid white;
+  border-radius: 8px;
+  margin-right: 10px;
+  color: white;
+}
+.mid
+{
+  width: 100%;
+  height: 52%;
+  /* border: 1px solid white; */
+}
+.mid1
+{
+  width: 100%;
+  height: 40%;
+  /* border: 1px solid white; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+
+}
+.mid2
+{
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  opacity: 1;
+  margin-bottom: 5px;
+}
+.img1
+{
+  width: 50px;
+  height: 50px;
+}
+.bot
+{
+  width: 100%;
+  height: 40%;
+  /* border: 1px solid white; */
+  display: flex;
+
+}
+.sview
+{
+  width: 100%;
+  height: 100%;
+}
+.sview1
+{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: space-around; */
+}
+.cell
+{
+  width: 24%;
+  height: 90%;
+  /* border: 1px solid white; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+.cell1
+{
+  width: 100%;
+  height: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid white; */
+}
+.cell2
+{
+  width: 100%;
+  height: 75%;
+  /* border: 1px solid white; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.img2
+{
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

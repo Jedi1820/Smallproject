@@ -1,0 +1,12 @@
+{
+  "pages": [
+    "pages/three/three",
+    "pages/four/four",
+    "pages/two/two",
+    "pages/one/one",
+    "pages/index/index"
+  ],
+  "window": {
+    "defaultTitle": "My App"
+  }
+}

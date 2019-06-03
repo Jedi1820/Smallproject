@@ -1,0 +1,44 @@
+<!--pages/two/two.wxml-->
+<view class='test'>
+  <view class='top'>
+  生活运动</view>
+  <view class='mid'>
+  <movable-area class='mid'>
+    <movable-view class='cell'x='{{15}}' y='{{30}}'direction="all">
+        <image src="{{item}}" class="pic1"></image>
+    </movable-view>
+    <movable-view class='cell'x='{{130}}'y='{{30}}'direction="all">
+        <image src="{{item}}" class="pic1"></image>
+    </movable-view>
+
+    <movable-view class='cell'x='{{240}}'y='{{30}}'direction="all">
+        <image src="{{item}}" class="pic1"></image>
+    </movable-view>
+
+    <movable-view class='cell'x='{{15}}' y='{{140}}'direction="all">
+        <image src="{{item}}" class="pic1"></image>
+    </movable-view>
+
+    <movable-view class='cell'x='{{130}}'y='{{140}}'direction="all">
+        <image src="{{item}}" class="pic1"></image>
+    </movable-view>
+
+    <movable-view class='cell'x='{{240}}'y='{{140}}'direction="all">
+        <image src="{{item}}" class="pic1"></image>
+    </movable-view>
+
+    <movable-view class='cell'x='{{15}}' y='{{250}}'direction="all">
+        <image src="{{item}}" class="pic1"></image>
+    </movable-view>
+
+    <movable-view class='cell'x='{{130}}'y='{{250}}'direction="all">
+        <image src="{{item}}" class="pic1"></image>
+    </movable-view>
+
+    <movable-view class='cell'x='{{240}}'y='{{250}}'direction="all">
+        <image src="{{item}}" class="pic1"></image>
+    </movable-view>
+    </movable-area>
+  </view>
+  <view class='bot'></view>
+</view>

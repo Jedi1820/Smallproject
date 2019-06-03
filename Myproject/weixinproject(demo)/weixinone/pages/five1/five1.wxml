@@ -1,0 +1,20 @@
+<!--pages/five1/five1.wxml-->
+<view class='base'>
+  <view class='top'>每日新闻</view>
+  <!-- <view class='mid'> -->
+     <scroll-view class='scview' scroll-y="true">
+            <view class='s1'>
+              <block  wx:for="{{top}}">
+                <view class='s2'>
+                   <view class='s3'>
+                     <image class="pic" src='{{item.thumbnail_pic_s}}'></image>
+                   </view>
+                    <view class='s4'>
+                    {{item.title}}
+                    </view>
+                </view>
+           </block>
+            </view>
+     </scroll-view>
+  <!-- </view> -->
+</view>

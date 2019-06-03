@@ -1,0 +1,33 @@
+/* pages/two/two.wxss */
+.cview
+{
+  width: 100%;
+  height: 100vh;
+  background-color: bisque;
+}
+.cell
+{
+  width: 18%;
+  height: 50%;
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+
+}
+
+.test1
+{
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.test2
+{
+  width: 100%;
+  height: 80%;
+  border: 1px solid black;
+}

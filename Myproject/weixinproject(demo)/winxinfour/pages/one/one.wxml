@@ -1,0 +1,23 @@
+<!--pages/one/one.wxml-->
+<view class='base'>
+<text>{{page}}</text>
+
+  <swiper class='sview' autoplay='{{true}}' vertical='{{true}}' circular='{{true}}'>
+    <block wx:for="{{swipdata}}">
+        <!-- <navigator url="{{item.url}}"> -->
+             <swiper-item>
+                <view class='swview'>
+                <text>{{item.text}}</text>
+                </view>
+             </swiper-item>
+         <!-- </navigator> -->
+
+    </block>
+  </swiper>
+  <view class='mid'></view>
+<view class='bot'>
+     
+
+
+</view>
+</view>

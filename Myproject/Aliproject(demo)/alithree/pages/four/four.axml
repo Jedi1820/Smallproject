@@ -1,0 +1,14 @@
+<swiper indicator-dots="{{true}}"  indicator-active-color="red">
+  <block a:for="{{swiperdata}}">
+    <swiper-item>
+      <view class="test">
+            <image src="{{item}}" class="pic"></image>
+         <block a:if="{{index==swiperdata.length-1}}">
+            <button class="but" onTap="onclick">
+             立即进入
+            </button>
+         </block>
+      </view>
+    </swiper-item>
+  </block>
+</swiper>

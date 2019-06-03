@@ -1,0 +1,65 @@
+<!--pages/three1/three1.wxml-->
+<view class='base'>
+  <view class='top'>
+     <swiper indicator-dots='{{true}}' autoplay='{{true}}' indicator-active-color='{{true}}' interval='{{3000}}' duration='{{2000}}' circular='{{true}}' class='swview'>
+     <navigator url='../one/one'>
+        <swiper-item> 
+           <image src="http://yiazyr.natappfree.cc/images/a1.jpg" class="pic1"></image>
+        </swiper-item>
+     </navigator>
+
+     <navigator url='../two/two'>
+        <swiper-item>
+           <image src='http://yiazyr.natappfree.cc/images/a2.jpg' class="pic1"></image>
+        </swiper-item>
+     </navigator>
+     <navigator url='../three/three'>
+        <swiper-item>
+           <image src='http://yiazyr.natappfree.cc/images/a3.jpg' class="pic1"></image>
+        </swiper-item>
+     </navigator>
+     </swiper>
+  </view>
+
+  <view class='mid'>
+     <swiper vertical='{{true}}' autoplay='{{true}}'>
+        <block wx:for="3">
+           <swiper-item>
+            
+           </swiper-item>
+        </block>
+     </swiper>
+  </view>
+
+  <view class='bot'>
+     <scroll-view  scroll-y='{{true}}' class='scview'>
+       <view class='test'>
+         <navigator url='../five1/five1'>
+          <view class='cell'>1</view>
+         </navigator>
+          <view class='cell'>2</view>
+          <view class='cell'>3</view>
+          <view class='cell'>4</view>
+          <view class='cell'>5</view>
+          <view class='cell'>6</view>
+          <view class='cell'>7</view>
+          <view class='cell'>8</view>
+          <view class='cell'>9</view>
+          <view class='cell'>10</view>
+          <view class='cell'>11</view>
+          <view class='cell'>12</view>
+          <view class='cell'>13</view>
+          <view class='cell'>14</view>
+          <view class='cell'>15</view>
+          <view class='cell'>16</view>
+          <view class='cell'>17</view>
+          <view class='cell'>18</view>
+       </view>
+     </scroll-view>
+  </view>
+
+  <view class='last'>
+      版权所有，翻版必究！
+  </view>
+
+</view>

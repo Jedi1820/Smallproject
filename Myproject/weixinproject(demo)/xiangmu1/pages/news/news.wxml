@@ -1,0 +1,99 @@
+<!--pages/news/news.wxml-->
+<view class='base'>
+    <view class='top'>
+       <view class='top1'>
+          <image class='img' src='http://ching.natapp1.cc/images/back1.png' bindtap='bt'> </image>
+       </view>
+       <view class='top2'>新闻</view>
+       <view class='top3'>
+          <image class='img1' src='http://ching.natapp1.cc/images/add.png'></image>
+       </view>
+    </view>  
+    <view class='mid'>
+       <view class='mid1'>
+          <view hover-class='cell' data-item='0' bindtap='click'>头条</view>
+          <view hover-class='cell' data-item='1' bindtap='click'>体育</view>
+          <view hover-class='cell' data-item='2' bindtap='click'>科技</view>
+          <view hover-class='cell' data-item='3' bindtap='click'>娱乐</view>
+          <view hover-class='cell' data-item='4' bindtap='click'>国际</view>
+       </view>
+       <view class='mid2'>
+          <swiper class='swview' current='{{test}}' indicator-dots='{{false}}' autoplay='{{false}}' vertical='{{false}}'>
+            <swiper-item>
+               <scroll-view class="one" scroll-y="{{true}}">
+                  <block wx:for="{{news}}">
+                     <view class="cell1">
+                       <view class="one1">
+                          <image src="{{item.thumbnail_pic_s}}" class="pic" />
+                       </view>
+                       <view class="one2">
+                         {{item.title}}
+                       </view>
+                     </view>
+                   </block>
+              </scroll-view>
+            </swiper-item>
+      
+            <swiper-item>
+               <scroll-view class="one" scroll-y="{{true}}">
+                  <block wx:for="{{news1}}">
+                     <view class="cell1">
+                       <view class="one1">
+                          <image src="{{item.thumbnail_pic_s}}" class="pic" />
+                       </view>
+                       <view class="one2">
+                         {{item.title}}
+                       </view>
+                     </view>
+                   </block>
+              </scroll-view>
+            </swiper-item>
+           
+            <swiper-item>
+               <scroll-view class="one" scroll-y="{{true}}">
+                  <block wx:for="{{news2}}">
+                     <view class="cell1">
+                       <view class="one1">
+                          <image src="{{item.thumbnail_pic_s}}" class="pic" />
+                       </view>
+                       <view class="one2">
+                         {{item.title}}
+                       </view>
+                     </view>
+                   </block>
+              </scroll-view>
+            </swiper-item>
+           
+            <swiper-item>
+               <scroll-view class="one" scroll-y="{{true}}">
+                  <block wx:for="{{news3}}">
+                     <view class="cell1">
+                       <view class="one1">
+                          <image src="{{item.thumbnail_pic_s}}" class="pic" />
+                       </view>
+                       <view class="one2">
+                         {{item.title}}
+                       </view>
+                     </view>
+                   </block>
+              </scroll-view>
+            </swiper-item>
+           
+            <swiper-item>
+               <scroll-view class="one" scroll-y="{{true}}">
+                  <block wx:for="{{news4}}">
+                     <view class="cell1">
+                       <view class="one1">
+                          <image src="{{item.thumbnail_pic_s}}" class="pic" />
+                       </view>
+                       <view class="one2">
+                         {{item.title}}
+                       </view>
+                     </view>
+                   </block>
+              </scroll-view>
+            </swiper-item>
+          </swiper>
+       </view> 
+    </view>
+</view>

@@ -1,0 +1,36 @@
+/* pages/one/one.wxss */
+.base
+{
+  width: 100%;
+  height: 100vh;
+}
+.sview
+{
+  width: 100%;
+  height: 30px;
+  background-color: pink;
+}
+.swview
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+text
+{
+  color: blue;
+  display: block;
+  
+}
+.mid
+{
+  width: 100%;
+  height: 80%;
+}
+.bot
+{
+  width: 100%;
+  height: 10%;
+  
+  border: 1px solid black;
+}

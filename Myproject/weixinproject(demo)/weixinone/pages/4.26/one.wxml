@@ -1,0 +1,18 @@
+<!--pages/4.26/one.wxml-->
+<view class='base'> 
+
+   <camera class='caview' device-position='front' flash='off'>
+      <block wx:if="{{visible}}">
+        <cover-image src='http://ching.natapp1.cc/images/ca1.png' class='covima' bindtap='bt'>
+        </cover-image>
+      </block>
+   </camera>
+
+      <image src='{{image}}' class='pic'></image>
+  <view class='but'>
+      <block wx:if="{{mobile}}">
+         <button type='primary' class='btn' bindtap='bt1'>重拍</button>
+         <button type='primary' class='btn' bindtap='bt2'>提交</button>
+      </block>
+  </view>
+</view>

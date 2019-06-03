@@ -1,0 +1,11 @@
+<!--pages/4.28/one.wxml-->
+      <block wx:for="{{music}}">
+        <view class='cell' bindtap='auclick' data-url="{{item.url}}" data-name="{{item.name}}" data-author="{{item.author}}" data-img="{{item.img}}">
+            <view class='img'>
+              <image class='pic' src='{{item.img}}'></image>
+            </view>
+        <view>{{item.name}}</view>
+        <view>{{item.author}}</view>
+        </view>
+      </block>
+

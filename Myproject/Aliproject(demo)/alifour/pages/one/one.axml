@@ -1,0 +1,18 @@
+<swiper class="swview" indicator-dots="{{true}}" indicator-active-color="red">
+  
+  <block a:for="{{imgdata}}">  
+    
+    <swiper-item class="sview">
+      <view class="test">
+          <image src="{{item.imagepath}}" class="pic"></image>
+        <block a:if="{{index==imgdata.length-1}}">
+          <button class="bt" onTap="bttap">
+            进入
+          </button>
+        </block>
+     </view>
+    </swiper-item>  
+   </block>
+   
+  
+</swiper>

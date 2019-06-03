@@ -1,0 +1,196 @@
+/* pages/two/two.wxss */
+.two
+{
+  width: 100%;
+  height: 100vh;
+}
+.top
+{
+  width: 100%;
+  height: 8%;
+  background-color: wheat;
+  font-family: 黑体;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 5px;
+}
+.mid
+{
+  width: 100%;
+  height: 82%;
+  background-image: linear-gradient(to bottom,#4876FF,#7FFFD4);
+}
+.bot
+{
+  width: 100%;
+  height: 10%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+}
+.GG
+{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+}
+.cell
+{
+  width: 80px;
+  height: 80px;
+  border: 1px solid black;
+  margin-left: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 80px;
+  font-family: 微软雅黑;
+  color: red;
+}
+.pic1
+{
+  width: 80px;
+  height: 80px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 80px;
+}
+.pic2
+{
+  width: 80px;
+  height: 80px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 80px;
+}
+.pic3
+{
+  width: 80px;
+  height: 80px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 80px;
+}
+.pic4
+{
+  width: 80px;
+  height: 80px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 80px;
+}
+.pic1
+{
+  width: 80px;
+  height: 80px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 80px;
+}
+.pic5
+{
+  width: 80px;
+  height: 80px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 80px;
+}
+.pic6
+{
+  width: 80px;
+  height: 80px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 80px;
+}
+.pic7
+{
+  width: 80px;
+  height: 80px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 80px;
+}
+.pic8
+{
+  width: 80px;
+  height: 80px;
+  border: 1px solid black;
+  display: flex;               /**响应式布局**/
+  justify-content: center;     /**水平居中**/
+  align-items: center;         /**垂直居中**/
+  border-radius: 80px;         /**边界圆角**/
+}
+.pic9
+{
+  width: 80px;
+  height: 80px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 80px;
+}
+.p1
+{
+ width: 60px;
+ height:60px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.p2
+{
+ width: 60px;
+ height:60px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.p3
+{
+ width: 60px;
+ height:60px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.p4
+{
+ width: 60px;
+ height:60px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.p5
+{
+ width: 60px;
+ height:60px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}

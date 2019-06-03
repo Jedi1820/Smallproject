@@ -1,0 +1,14 @@
+<!--pages/4.29/two.wxml-->
+<view class='base'>
+   <view class='one'>
+      <video id="vd" class='vdview' controls='controls' src='{{src}}' autoplay='{{true}}'>
+      </video>
+   </view>
+        <view class="{{videodata.length>10?'text1':'text'}}">
+           <block wx:for="{{videodata}}">
+             <view hover-class='test' class='cell' bindtap='click' data-url='{{item.videopath}}'>
+               <text>{{index+1}}</text>
+             </view>
+           </block>
+       </view>
+</view>

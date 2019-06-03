@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "pages/two/two",
+    "pages/4.28/one/one",
+    "pages/4.26/one/one",
+    
+    "pages/one/one",
+    "pages/index/index",
+    "pages/4.28/music/music"
+  ],
+  "window": {
+    "defaultTitle": "My App"
+  }
+}

@@ -1,0 +1,17 @@
+<!--pages/five/five.wxml-->
+<swiper class="swview" indicator-dots='{{true}}' indicator-active-color='red'>
+  <block wx:for="{{imagdata}}">
+   <navigator url="{{item.path}}">
+     <swiper-item class="itview">
+         <view class='test'>
+             <image  class="pic" src='{{item.imagepath}}'></image>
+             <block wx:if="{{index==imagdata.length-1}}">
+               <button class='btview' bindtap='onclick1'>
+               进入体验
+               </button>
+            </block>
+         </view>
+     </swiper-item>
+    </navigator>
+  </block>
+</swiper>

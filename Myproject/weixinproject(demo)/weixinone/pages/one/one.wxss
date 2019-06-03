@@ -1,0 +1,94 @@
+/* pages/oen/one.wxss */
+.qw
+{
+  font-family: 黑体;
+  font-size: 28px;
+  font-weight:bold;
+  color:chocolate;
+}
+/**这是注释!!!**/
+.qq
+{
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+}
+.topview
+{
+  width: 100%;
+  height: 6%;
+  border-bottom: 0px;
+  font-family:黑体;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: red;
+}
+.midview
+{
+  width: 100%;
+  height: 84%;
+  background-color: oldlace;
+
+}
+
+.botview
+{
+  width: 100%;
+  height:10%;
+  border-top: 1px solid paleturquoise;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 黑体;
+  color: red;
+
+}
+.mid1
+{
+  width: 100%;
+  height: 30%;
+  background-color: brown;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mid2
+{
+  width: 100%;
+  height: 70%;
+  background-color: greenyellow;
+  display: flex;
+  align-items:center;
+  flex-direction: column;
+  justify-content: center;
+}
+.one
+{
+  width: 30%;
+  height: 40px;
+  background-color: rgb(255, 172, 47);
+}
+.two
+{
+  width: 30%;
+  height: 40px;
+  background-color: rgb(47, 213, 255);
+}
+.three
+{
+  width: 40%;
+  height: 60px;
+  background-color: rosybrown;
+}.four
+{
+  width: 40%;
+  height: 60px;
+  background-color: blueviolet;
+}.five
+{
+  width: 40%;
+  height: 60px;
+  background-color: rgb(255, 113, 47);
+}

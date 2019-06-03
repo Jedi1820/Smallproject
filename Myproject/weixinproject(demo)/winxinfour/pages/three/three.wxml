@@ -1,0 +1,2 @@
+<!--pages/three/three.wxml-->
+<button bindtap='clickbtn'>点击</button>

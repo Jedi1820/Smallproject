@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/5.5/map",
+    "pages/4.30/one",
+    "pages/4.29/one",
+    "pages/4.26/one",
+    "pages/4.28/one",
+    "pages/4.29/two",
+    "pages/4.26/two",
+    "pages/three1/three1",
+    "pages/five/five",
+    "pages/five1/five1",
+    "pages/three/three",
+    "pages/two/two",
+    "pages/four/four",
+    "pages/four1/four1",
+    "pages/one/one",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/six/six",
+    "pages/4.28/music"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}

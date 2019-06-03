@@ -1,0 +1,32 @@
+/* pages/scan/scan.wxss */
+.base
+{
+  width: 100%;
+  height: 100vh;
+}
+.top
+{
+  width: 100%;
+  height: 8%;
+  background-color: #63B8FF;
+  display: flex;
+  align-items: center;
+}
+.img
+{
+  width: 30px;
+  height: 30px;
+}
+.mid
+{
+  width: 100%;
+  height: 92%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.scan
+{
+  width: 140px;
+  height: 140px;
+}

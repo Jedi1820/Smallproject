@@ -1,0 +1,25 @@
+/* pages/four/four.wxss */
+.test0
+{
+  width: 100%;
+  height: 60px;
+  background-color: palegreen;
+}
+.test1
+{
+  width: 100%;
+  height: 60px;
+  background-color: khaki;
+}
+.test2
+{
+  width: 100%;
+  height: 60px;
+  background-color: red;
+}
+.test3
+{
+  width: 100%;
+  height: 60px;
+  background-color: darkgoldenrod;
+}
