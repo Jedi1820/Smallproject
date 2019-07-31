@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC 
+    "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="webapp.app.dao.IUserDao">
+
+
+	<select id="checkLogin" resultType="int"
+		parameterType="webapp.app.model.UserInfo">
+		select count(*) from t_userinfo u where u.uname=#{uname}
+		and trim(u.upwd)=#{upwd}
+	</select>
+
+	<select id="checkUserName" resultType="int"
+		parameterType="string">
+		select count(*) from t_userinfo u where u.uname=#{aa}
+	</select>
+	
+	<select id="queryUserInfo" resultType="webapp.app.model.UserInfo"
+		parameterType="string">
+	 select  * from   t_userinfo  u  where u.uname=#{name}
+	</select>
+	
+	<select id="querySwiperInfo" resultType="webapp.app.model.Swiper">
+   select *  from  (select  rownum , s.* from   t_swiper s  where   
+   trunc(ttime)=trunc(sysdate) order by tmoney desc) t where rownum &lt;=3
+	
+	</select>
+
+</mapper>

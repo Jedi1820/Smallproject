@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			body
+			{
+				width: 100%;
+				height: 100vh;
+				overflow-x:hidden;
+				overflow-y:hidden;
+				background-image: url('http://ching.natapp1.cc/springboot/bg1.png');
+				background-size: 100% 100%;
+			}
+			.topview
+			{
+				width: 100%;
+				height: 10%;
+				/* border: 1px solid black; */
+				display: flex;
+			}
+			.topleft
+			{
+						  width: 40%;
+						  height: 100%;
+						  /* border: 1px solid blue; */
+			}
+			.topmid
+			{
+						  width: 15%;
+						  height: 100%;
+						  /* border: 1px solid aliceblue; */
+			}
+			.topright
+			{
+						  width: 45%;
+						  height: 100%;
+						  /* border: 1px solid darkcyan; */
+						  display: flex;
+						  align-items: center;
+						  justify-content: space-around;
+						  margin-right: 2%;
+			}
+			.topimg
+			{
+						  width: 100%;
+						  height: 100%;
+						  display: flex;
+						  align-items: center;
+						  justify-content: center;
+						  margin-left: 15%;
+			}
+			.midview
+			{
+				width: 100%;
+				height: 80%;
+				/* border: 1px solid red; */
+				display: flex;
+			}
+			.midleft
+			{
+				width: 60%;
+				height: 100%;
+				/* border: 1px solid black; */
+				display: flex;
+			}
+			.midright
+			{
+				width: 40%;
+				height: 100%;
+				/* border: 1px solid red; */
+			}
+			.midleft1
+			{
+				width: 30%;
+				height: 100%;
+				/* border: 1px solid red; */
+			}
+			.midleft2
+			{
+				width: 70%;
+				height: 100%;
+				/*border: 1px solid blue;*/
+			}
+			.midleft2  div {
+				display: none;
+				width: 70%;
+				height: 80%;
+				text-align: center;
+				font-size: 30px;
+				background-color: #1E90FF;
+				line-height: 90px;
+			}
+			.midleft2 div.show
+			{
+				display: block;
+				border-radius: 1.25rem;
+				background-color: rgba(255,255,255,0.7);
+				
+				
+    
+    
+			}
+			ul  li {
+				list-style: none;
+				width: 25%;
+				height: 40px;
+				float: left;
+				cursor: pointer;
+				background-color: #AEEEEE;
+				text-align: center;
+				line-height: 40px;
+				letter-spacing: 4px;
+				font-family: 微软雅黑;
+				font-weight: bold;
+				margin: 0.625rem;
+				
+			}
+			ul li.active {
+				background-color: #858585;
+				color: white;
+			}
+			#loginform {
+				width: 80%;
+				height: 70%;
+				/** border:1px  solid  red;**/
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				position: relative;
+				top: 15%;
+				left: 10%;
+				
+				
+			}
+			#loginform input {
+				width: 70%;
+				height: 12%;
+				text-align: center;
+				margin-top: 6%;
+				border-radius: 1.5625rem;
+			}
+			#regform  
+			{
+				width: 80%;
+				height: 70%;
+				/** border:1px  solid  red;**/
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				position: relative;
+				top: 15%;
+				left: 10%;
+			
+			}
+			
+			#regform input {
+				width: 70%;
+				height: 12%;
+				text-align: center;
+				margin-top: 6%;
+				border-radius: 1.5625rem;
+			}
+			span {
+				font-size: 16px;
+				letter-spacing: 10px;
+				font-style: italic;
+			}
+			
+			input[type='submit'] {
+				border: none;
+				background-color: #7FFFD4;
+				letter-spacing: 5px;
+				font-weight: bold;
+			}
+			
+			input[type='submit']:hover {
+				border: none;
+				background-color: #87CEEB;
+				color: #8A8A8A;
+			}
+			.botview
+			{
+				width: 100%;
+				height: 10%;
+				/* border: 1px solid blue; */
+				display: flex;
+			}
+			.bot1
+			{
+						  width: 40%;
+						  height: 100%;
+						  display: flex;
+						  align-items: center;
+						  justify-content: center
+						  
+			}
+			.bot2
+			{
+						  width: 60%;
+						  height: 100%;
+						  
+			}
+			.img
+			{
+						  width: 1.5625rem;
+						  height: 1.5625rem;
+						  /* border: 1px solid black; */
+						  margin: 0.5rem;
+			}
+			.img1
+			{
+						  width: 60%;
+						  height: 1.5625rem;
+						  /* border: 1px solid black; */
+			}
+			.btimg
+			{
+						  width: 100%;
+						  height: 100%;
+			}
+			input[type='submit'] {
+				border: none;
+				background-color: #7FFFD4;
+				letter-spacing: 5px;
+				font-weight: bold;
+			}
+			
+			input[type='submit']:hover {
+				border: none;
+				background-color: #87CEEB;
+				color: #8A8A8A;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="topview">
+			<div class="topleft">
+				<img class="topimg" src="http://ching.natapp1.cc/springboot/1562730964_504683.png"/>
+			</div>
+			<div class="topmid"></div>
+			<div class="topright">
+				<div class="right">News</div>
+				<div class="right">Weather</div>
+				<div class="right">Music</div>
+				<div class="right">Contact</div>
+				<div class="right">
+					<div class="login" ><a  href="manager/index">Login</a></div>
+				</div>
+			</div>
+		</div>
+		<div class="midview">
+			<div class="midleft">
+				<div class="midleft1"></div>
+				<div class="midleft2" id="mid">
+					<ul>
+						<li class="active">用户登录</li>
+						<li>用户注册</li>
+					</ul>
+					<div class="show">
+					    <form id="loginform" action="/users/login" method="post"
+				               onsubmit="return checkcode();">
+						    <input type="text" name="username" placeholder="请输入姓名:" /> 
+							<input type="password" name="userpwd" placeholder="请输入密码:" /> 
+							<input id="code" type="text" name="inputcode" placeholder="请输入验证码" />
+						    <span id="rececode"></span>
+						     <input type="submit" value="登陆" />
+						    <span th:text="${failmsg}"></span>
+					    </form>
+					</div>
+					<div>
+					
+						<form id="regform" action="" method="post">
+							<input  id="username" type="text" name="username" placeholder="请输入姓名:" />
+							<input type="password" name="userpwd" placeholder="请输入密码:" />
+							 <span  id="checkmsg"></span>
+							 <input type="submit"  id="regbtn" value="注册" />
+					       
+						</form>
+					
+					</div>
+				</div>
+			</div>
+			<div class="midright"></div>
+		</div>
+		<div class="botview">
+			<div class="bot1">
+				<div class="img">
+					<img class="btimg" src="http://ching.natapp1.cc/springboot/qq.png" />
+				</div>
+				<div class="img">
+					<img class="btimg" src="http://ching.natapp1.cc/springboot/sina.png" />
+				</div>
+				<div class="img">
+					<img class="btimg" src="http://ching.natapp1.cc/springboot/share.png" />
+				</div>
+				<div class="img1">
+		            @Mingshi Technology
+				</div>
+			</div>
+			<div class="bot2">
+				
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript">
+	  //js的dom,其中的那个li被点击，切换那个div为show样式
+	  //th模板语言  ,length属性
+	    var  lis=document.querySelectorAll("#mid ul  li");
+	    console.log(lis);
+	    
+	    var divs=document.querySelectorAll(".midleft2   div");
+	    console.log(divs);
+	
+	    lis.forEach(function(element,index)
+	    {
+	    	
+	    	console.log(element+"-->"+index);
+	    	
+	    	lis[index].onclick=function()
+	    	{
+	    		
+	    		console.log(element.innerText+",被点击");
+	    		
+	    		//清空所有的样式和视图
+	    		lis.forEach(function(element,i){
+	    			
+	    			lis[i].classList.remove("active");
+	    			divs[i].classList.remove("show");
+	    			lis[i].style.color="";
+	    			
+	    		});
+	    		
+	    		//样式赋值  this代表当前被点击的li
+	    		this.className="active";
+	    		this.style.color="green";
+	    		
+	    		console.log(index);
+	    		
+	    		// 切换视图
+	    		divs[index].className="show";
+	    		 
+	    	}
+	    });
+	    
+	    //以上都是js
+	    
+	    var  codevalue="";
+	    
+	    function  checkcode()
+	    {
+	    	console.log("提交检查");
+	    	
+	    	var inputcodeValue=document.getElementById("code").value;
+	    	
+	    	if(inputcodeValue==codevalue)
+	        {
+	    		
+	    		console.log("验证码输入正确");
+	    		
+	    		return  true;
+	    	}
+	    	else
+	    	{
+	    		postcode();
+	    		return false;
+	    	}
+	    	
+	    }
+	    
+	   // document.getElementById("rececode").onclick=function()
+	 //  {
+	    //	postcode();
+	    	
+	   // };
+	   
+	   document.getElementById("rececode").onclick=aa;
+	   
+	   function aa()
+	   {
+		   postcode();
+		   
+	   }
+	    
+	  //  $("#rececode").click(function(){
+	    	
+	    	//postcode();
+	    //});
+	    
+	    postcode();
+	    
+	    function postcode()
+	    {
+	    	
+	    	 //jquery  ajax请求验证码
+	        $.ajax({
+	        	type:'post',
+	        	url:'/utils/createcode',
+	        	async:true,//异步
+	        	dataType:'json',
+	        	success:function(datas)
+	        	{
+	        		
+	        		codevalue=datas;
+	        		//alert(datas);
+	        		
+	        		//js获取元素
+	        		//document.getElementById("rececode").innerText=datas;
+	        		
+	        		//jquery获取元素
+	        		$("#rececode").text(datas);
+	        	}
+	        	
+	        	
+	        });
+	    	
+	    }
+	    
+	    //jquery方法处理，检查用户名是否重复
+	  
+	    $("#username").blur(function(){
+	    	
+	    	console.log("失去焦点事件");
+	    	
+	    	var  username=$(this).val();
+	    	console.log("失去焦点事件-->"+username);
+	    	
+	    	if(""!=username)
+	    	{
+	    		
+	    		 $.ajax({
+	    			 
+	    			 type:'post',
+	    	          url:'/users/checkUserName',
+	    	          data:{"uname":username},
+	    	          async:true,//异步
+	    	          dataType:'json',
+	    	          success:function(datas)
+	    	          { 
+	    	        	  console.log(datas);
+	    	        	  
+	    	        	  if(datas>"0")
+	    	        	  {
+	    	        		  $("#checkmsg").text("用户名重复,不能注册");
+	    	        		  $("#regbtn").attr({"disabled":"disabled"});
+	    	        	  }
+	    	        	  else
+	    	        	  {
+	    	        		  $("#checkmsg").text("可以注册");
+	    	        	  }
+	    	          }
+	    			 
+	    		 });
+	    		
+	    	}
+	    	
+	    });
+	   
+	    
+	    
+	</script>
+</html>

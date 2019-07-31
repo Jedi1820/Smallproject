@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Insert title here</title>
+    <style type="text/css">
+        body {
+            width: 100%;
+            height: 100vh;
+            /**background-color: #fedcec;**/
+            overflow-x: hidden;
+            overflow-y: hidden;
+            /*background-image: url("http://127.0.0.1:8888/images/s1.jpg");*/
+            background-size: cover;
+        }
+
+        table {
+            width: 60%;
+            height: 40%;
+            border: 0;
+            text-align: center;
+            border-collapse: collapse;
+            border-spacing: 0;
+            margin-left: 220px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        table th {
+            background: #0090D7;
+            font-weight: normal;
+            line-height: 50px;
+            font-size: 15px;
+            color: #FFF;
+        }
+
+        table tr:nth-child(odd) {
+            background: #F4F4F4;
+        }
+
+        table td:nth-child(even) {
+            color: #C00;
+        }
+
+        table tr:hover {
+            background: #73B1E0;
+            color: #FFF;
+        }
+
+        table td, table th {
+            border: 1px solid #EEE;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover {
+            color: red;
+            text-decoration: none;
+        }
+
+        .text {
+            width: 100%;
+            height: 8%;
+            display: flex;
+        }
+
+        .page {
+            width: 25%;
+            height: 60%;
+            /* border:1px solid red; */
+            margin-left: 20px;
+            margin-top: 10px;
+            text-align: center;
+            font-size:16px;
+            letter-spacing: 2px;
+        }
+
+        .xuanzhe {
+            width: 25%;
+            height: 100%;
+            /* border:1px solid red; */
+            margin-left: 700px;
+            margin-top: 10px;
+            text-align: center;
+            font-size:16px;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+<table  border="1">
+    <tr  th:each="emp:${empdatas}">
+        <td th:text="${emp.ename}"></td>
+        <td th:text="${emp.epwd}"></td>
+        <td th:text="${emp.ejob}"></td>
+    </tr>
+
+
+</table>
+
+<hr>
+<div class='text'>
+    <div class='page'>
+        总的条数为:<span th:text="${vcount}"></span>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        总页数为:<span th:text="${vsize}"></span>
+    </div>
+    <div class='xuanzhe'>
+        <a th:href="@{/emps/infos?pageNum=1}">首页</a> &nbsp;&nbsp;&nbsp;
+        <block th:if="${currentnum-1}==0">
+            <a th:href="@{/emps/infos?pageNum=1}">上一页</a></block>
+        &nbsp;
+        <block th:if="${currentnum-1}!=0">
+            <a th:href="@{'/emps/infos?pageNum='+${currentnum-1}}">上一页</a></block>
+        &nbsp;
+        <block th:if="${currentnum+1}>${vsize}">
+            <a th:href="@{'/emps/infos?pageNum='+${vsize}}">下一页</a></block>
+        &nbsp;&nbsp;
+        <block th:if="${currentnum+1}<=${vsize}">
+            <a th:href="@{'/emps/infos?pageNum='+${currentnum+1}}">下一页</a></block>
+        &nbsp;&nbsp; <a th:href="@{'/emps/infos?pageNum='+${vsize}}">尾页</a>
+    </div>
+</div>
+</body>
+</html>

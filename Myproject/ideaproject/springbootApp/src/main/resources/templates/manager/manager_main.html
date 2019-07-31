@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title>Insert title here</title>
+<style  type="text/css">
+  *{
+    margin: 0px;
+    padding: 0px;
+    overflow:hidden;
+  
+  }
+  
+  body{
+  
+    width: 100%;
+    height: 100vh;
+      /*background-image: url("http://ching.natapp1.cc/springboot/1562730964_504683.png");*/
+    /*background-color: #E0FFFF;*/
+  }
+  .maintop{
+  
+    width: 100%;
+    height: 12%;
+    /*background-color: #D1EEEE;*/
+      background-repeat: no-repeat;
+      background-size: 45%;
+    font-size: 42px;
+      background-image: url("http://ching.natapp1.cc/springboot/1562730964_504683.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 15px;
+   
+  }
+  .maincontent{
+  
+   width: 100%;
+   height: 88%;
+   /*background-color: #CAE1FF;*/
+   display: flex;
+      background-image: url("http://ching.natapp1.cc/springboot/bg2.jpg");
+      background-repeat: no-repeat;
+      opacity: 0.8;
+  }
+  .leftmenu{
+  width: 18%;
+  height: 100%;
+  /*background-color: white;*/
+  
+  }
+  .rightcon{
+    width: 82%;
+    height: 100%;
+  /*background-color: #BCD2EE;*/
+  }
+  .menutop{
+    width: 100%;
+    height: 8%;
+    border-bottom: 2px solid #BCD2EE;
+    text-align: center;
+    background-color: #7AC5CD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .item1{
+   width: 100%;
+   height: 8%;
+   border-bottom:1px dotted  #BDBDBD;
+   display: flex;
+   align-items: center;
+ 
+  
+  }
+  .item1:hover{
+  
+  background-color: #00F5FF;
+  
+  }
+  .divimg{
+    width: 40px;
+    height: 40px;
+    margin-left: 50px;
+    margin-right: 20px;
+   
+  
+  }
+  .cimg{
+  
+  width: 100%;
+  height: 100%;
+  }
+  
+  a{
+   text-decoration: none;
+   color: black;
+  
+  }
+  .topimg{
+  
+  width: 12%;
+  height: 30px;
+
+  }
+</style>
+</head>
+
+<body>
+  <div  class="maintop">
+ 
+    <div>明氏科技业务综合控制后台</div>
+  </div>
+  
+  <div class="maincontent">
+    <div class="leftmenu">
+      <div class="menutop">
+      <div  class="topimg" th:each="user:${userdata}" >
+        
+        <img alt="" class="cimg"  th:src="${user.faceimg!=null?user.faceimg:'http://ching.natapp1.cc/springboot/user.png'}"/>
+      </div>
+       <div  th:text="${successName}"></div>
+      </div>
+      <div  class="item1"  th:each="menu:${menudatas}" >
+       <div class="divimg">
+          <img  class="cimg"  th:src="${menu.cimg}"/>
+       </div> 
+       <div>
+         <a th:href="@{${menu.curl}}" target="maindatas" th:text="${menu.cname}"></a>
+        </div>
+      </div>
+    
+    </div>
+   <div  class="rightcon">
+     <iframe  name="maindatas" width="100%" height="100%"></iframe>
+   </div>
+  </div>
+</body>
+</html>

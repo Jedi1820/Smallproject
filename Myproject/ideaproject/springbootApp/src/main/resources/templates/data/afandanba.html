@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style  type="text/css">
+		
+		</style>
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+	</head>
+	<body>
+		<div  id="afandaone">
+			<table  border="1">
+				<tr v-for="item in newsdatas">
+					<td><a v-bind:href="item.url">{{item.name}}</a></td>
+					<td>{{item.url}}</td>
+
+				</tr>
+			</table>
+			
+			<br />
+			
+			<table  border="1">
+				<tr v-for="item in newsdatas">
+					<td><a v-bind:href="item.url">{{item.name}}</a></td>
+					<td>{{item.url}}</td>
+
+				</tr>
+			</table>
+			
+			<br />
+			
+			<table  border="1">
+				<tr v-for="item in newsdatas">
+					<td><a v-bind:href="item.url">{{item.name}}</a></td>
+					<td>{{item.url}}</td>
+
+				</tr>
+			</table>
+			
+		</div>
+	</body>
+	<script type="text/javascript">
+		var  app = new Vue({
+			el:"#afandaone",
+			data:{
+				newsdatas:[]	
+			},
+			mounted:function()
+			{
+				var  that  =this;
+				 console.log("页面被加载");
+				 
+				 //请求阿凡达数据
+				 $.ajax({
+				 	type:"post",
+				 	url:"http://127.0.0.1:8181/Afanda/nba",
+				 	async:true,
+				 	dataType:"json",
+				 	success:function(datas)
+				 	{
+				 		console.log(datas.result);
+				 		that.newsdatas=datas.result.teammatch;
+				 	},
+				 	fail:function(error)
+				 	{
+				 		console.log(error);
+				 	}
+				 });
+			}
+		});
+	</script>
+</html>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC 
+    "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="webapp.app.dao.IEmpDao">
+
+     <resultMap  id="empmaps"  type="map">
+      <result  property="ename" column="ENAME"></result>
+      <result  property="epwd" column="EPWD"></result>
+      <result  property="ejob" column="EJOB"></result>
+   </resultMap>
+
+    <parameterMap type="map" id="empmaps">
+         <parameter property="tabName" mode="IN" jdbcType="VARCHAR"/>
+         <parameter property="pagenum" mode="IN" jdbcType="INTEGER"/>
+         <parameter property="fixednum" mode="IN" jdbcType="INTEGER"/>
+         <parameter property="vount" mode="OUT" jdbcType="INTEGER"/>
+         <parameter property="vsize" mode="OUT" jdbcType="INTEGER"/>
+         <parameter property="infocursor" mode="OUT" jdbcType="CURSOR"  resultMap="empmaps" />
+    </parameterMap>
+
+	<select  id="queryEmpInfo" parameterMap="empmaps" statementType="CALLABLE">
+	
+	   {call p_pages(?,?,?,?,?,?)}
+	</select>
+
+</mapper>

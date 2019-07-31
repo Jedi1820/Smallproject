@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style  type="text/css">
+			.imgc{
+				
+				width: 120px;
+				height: 180px;
+			
+			}
+			.imgview{
+				width: 100%;
+				height: 100%;
+			}
+			a{
+				text-decoration: none;
+			}
+			table{
+  border-collapse:collapse;
+  border:0px solid #999;
+  font-size:12px;
+  margin:50px;
+}
+table td{
+  border-top:0;
+  border-right:1px solid #999;
+  border-bottom:1px solid #999;
+  border-left:0;
+}
+table tr.lastrow td{
+  border-bottom:0;
+}
+table tr td.lastCol{
+  border-right:0;
+}
+		</style>
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+	</head>
+	<body>
+		<div  id="juheone">
+			<table  border="1">
+				<tr v-for="item in filmdatas">
+					<td>
+						<div  class="imgc">
+							<img  class="imgview" v-bind:src="item.poster"/>
+						</div>
+						
+					</td>
+					<td>{{item.also_known_as}}</td>
+					<!-- <td>{{item.category}}</td> -->
+					<td>{{item.actors}}</td>
+					<td>{{item.directors}}</td>
+					<td>{{item.plot_simple}}</td>
+					<td>{{item.rating}}</td>
+					<td>{{item.year}}</td>
+					
+				</tr>
+				
+			</table>
+			
+		</div>
+	</body>
+	<script type="text/javascript">
+		var  app = new Vue({
+			el:"#juheone",
+			data:{
+				filmdatas:[]
+				
+			},
+			mounted:function()
+			{
+				
+				var  that  =this;
+				 console.log("页面被加载");
+				 
+				 //请求聚合数据
+				 $.ajax({
+				 	type:"post",
+				 	url:"http://127.0.0.1:8181/juhe/film",
+				 	async:true,
+				 	dataType:"json",
+				 	success:function(datas)
+				 	{
+				 		console.log(datas.result);
+				 		
+				 		that.filmdatas=datas.result;
+				 	},
+				 	fail:function(error)
+				 	{
+				 		console.log(error);
+				 	}
+				 });
+			}
+			
+			
+		});
+		
+		
+	</script>
+</html>

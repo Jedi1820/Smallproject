@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style  type="text/css">
+			.news
+			{
+				width: 100%;
+				height: 100vh;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				align-content: center;
+				
+				
+			}
+			
+			a{
+				text-decoration: none;
+			}
+            .new{
+				width: 80%;
+				height: 15%;
+				/* border: 1px solid #008000; */
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				align-content: left;
+				
+			}
+			.new1
+			{
+				width: 50%;
+				height: 100%;
+				text-align: center;
+				
+			}
+			.new2
+			{
+				width: 10%;
+				height: 100%;
+				text-align: center;
+			}
+			.new3
+			{
+				width: 10%;
+				height: 100%;
+				text-align: center;
+			}
+		</style>
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+	</head>
+	<body>
+		<div  id="juheone" class="news" >
+			<div v-for="item in weixindatas" class="new">
+
+				
+					<div class="new1"><a v-bind:href="item.url">{{item.title}}</a></div>
+					
+					<div class="new2">{{item.source}}</div>
+					
+					<div class="new3">{{item.date}}</div>
+					
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var  app = new Vue({
+			el:"#juheone",
+			data:{
+				weixindatas:[]
+				
+			},
+			mounted:function()
+			{
+				
+				var  that  =this;
+				 console.log("页面被加载");
+				 
+				 //请求聚合数据
+				 $.ajax({
+				 	type:"post",
+				 	url:"http://127.0.0.1:8181/juhe/weixin",
+				 	async:true,
+				 	dataType:"json",
+				 	success:function(datas)
+				 	{
+				 		console.log(datas);
+				 		
+				 		that.weixindatas=datas.result.list;
+				 	},
+				 	fail:function(error)
+				 	{
+				 		console.log(error);
+				 	}
+				 });
+			}
+			
+			
+		});
+		
+		
+	</script>
+</html>
+
+					

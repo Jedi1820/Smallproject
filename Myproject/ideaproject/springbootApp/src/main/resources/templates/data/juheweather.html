@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style  type="text/css">
+			
+			.wea{
+				width: 100%;
+				height: 100vh;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				align-items: center;
+				
+			}
+			.wea2
+			{
+				width: 80%;
+				height: 10%;
+				display: flex;
+				flex-direction: row;
+			}
+			.wea3
+			{
+				width: 10%;
+				height: 100%;
+			}
+			.wea4
+			{
+				width: 10%;
+				height: 100%;
+			}
+			.wea5
+			{
+				width: 10%;
+				height: 100%;
+			}
+			.wea6
+			{
+				width: 10%;
+				height: 100%;
+			}
+			.wea7
+			{
+				width: 10%;
+				height: 100%;
+			}
+		</style>
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+	</head>
+	<body>
+		<div  id="juheone" class="wea">
+			
+				<div class="wea2" v-for="item in weatherdatas">
+					
+					<div class="wea3">{{item.date}}</div>
+					<div class="wea4">{{item.temperature}}</div>
+					<div class="wea5">{{item.weather}}</div>
+					<div class="wea6">{{item.wind}}</div>
+					<div class="wea7">{{item.week}}</div>
+					
+				</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var  app = new Vue({
+			el:"#juheone",
+			data:{
+				weatherdatas:[]
+				
+			},
+			mounted:function()
+			{
+				
+				var  that  =this;
+				 console.log("页面被加载");
+				 
+				 //请求聚合数据
+				 $.ajax({
+				 	type:"post",
+				 	url:"http://127.0.0.1:8181/juhe/weather",
+				 	async:true,
+				 	dataType:"json",
+				 	success:function(datas)
+				 	{
+				 		console.log(datas.result.future);
+				 		
+				 		that.weatherdatas=datas.result.future;
+				 	},
+				 	fail:function(error)
+				 	{
+				 		console.log(error);
+				 	}
+				 });
+			}
+			
+			
+		});
+		
+		
+	</script>
+</html>

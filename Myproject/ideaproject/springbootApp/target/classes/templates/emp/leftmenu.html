@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title>Insert title here</title>
+<style type="text/css">
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "微软雅黑";
+    font-size: 16px;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a,
+a:hover,
+a:active,
+a:link {
+    text-decoration: none;
+    color: #3d3d3d;
+}
+
+#nav_box {
+    width: 220px;
+    height: 100%;
+    
+}
+
+#nav_box #nav-mainbox {
+    padding: 0;
+
+}
+
+#nav-mainbox li {
+    background-color: #f2f2f2;
+    color: #333;
+    font-size: 14px;
+    position: relative;
+    line-height: 44px;
+    cursor: pointer;
+    border-bottom: 1px solid #dedede;
+    border-right: 1px solid #dedede;
+    
+}
+#nav-mainbox li:hover{
+    background-color: #ADADAD;
+}
+.shead{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    top: 10px;
+    padding: 10px;
+
+}
+.sfoot{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin-left: 70px;
+    
+}
+
+#nav-mainbox li ul{
+    padding: 0;
+}
+
+#nav-mainbox li ul li {
+    position: relative;
+    padding-left: 70px;
+    background-color: white;
+    border-bottom: 1px solid #dedede;
+    border-right: 1px solid #dedede;
+}
+#nav-mainbox li ul li:hover{
+    background-color: #ccc;
+}
+</style>
+</head>
+<body>
+ <div id="nav_box">
+            <ul id="nav-mainbox">
+                <li class="nav_head">
+                    <span class="shead"><img src="http://127.0.0.1:8500/images/a1.png"/></span>
+                    <a href="#">首页</a>
+                    <span class="sfoot"><img src=""/></span>
+                </li>
+            </ul>
+  </div>
+
+</body>
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript">
+
+$.getJSON("/manager/menus", function(data){
+	
+	console.log(data);
+	var str="";
+	data.forEach(function(element,i){
+		
+		 $.each(data[i], function(key, val) {
+			 
+			
+			 
+			 if(data[i][key]==0)
+			 {
+				 
+				str="<li class='"+data[i]['navId']+"'><span class='shead'><img src='"+data[i]['timg'] +"'/></span><a>"+data[i]['navTitle']+"</a><span class='sfoot'><img src=''/></span><ul></ul></li>";
+				console.log(str);
+				
+				$("#nav-mainbox").append(str);
+				
+				 $("li.1").children("ul").slideDown();
+				 $("li.1").siblings().children("ul").slideUp();
+				
+				//6.为一级菜单绑定点击事件
+				                   //一级菜单项可以滑动显示或隐藏子菜单项
+				                     //同时，当前菜单显示，则其他都隐藏
+				  $("." + data[i]["navId"]).click(function() {
+					  console.log("点击");
+				                        $(this).children("ul").slideToggle();
+				                        $(this).siblings().children("ul").slideUp();
+			                    });
+			 }
+			 if(data[i][key] == i + 1) {
+				                     //5.判断非一级菜单项
+				                      //根据该对象的父级菜单id找li标签，成为其子菜单项
+		$("." + data[i]["navParentId"]).find("ul").append("<li   class='" + data[i]["navId"] + "'><a href='" + data[i]["navUrl"] + "'>" + data[i]["navTitle"] + "</a></li>");
+			 }
+		       
+			 
+		 
+		 });
+		
+		
+		
+	});
+	
+});
+
+
+</script>
+</html>
