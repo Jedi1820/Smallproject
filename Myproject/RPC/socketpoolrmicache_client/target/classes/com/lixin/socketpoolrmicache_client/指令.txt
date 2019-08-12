@@ -1,0 +1,3 @@
+微信,个人号和群号，message
+微信#号#message
+邮件,好友,mail
