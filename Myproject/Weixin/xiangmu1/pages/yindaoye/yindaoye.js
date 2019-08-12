@@ -12,7 +12,7 @@ Page({
   onclick(){
       console.log("点击按钮");
       wx.navigateTo({
-        url: '../zhuye/zhuye',
+        url: '../first1/first1',
       })
   },
   /**

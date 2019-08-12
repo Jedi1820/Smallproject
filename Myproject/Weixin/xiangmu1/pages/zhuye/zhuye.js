@@ -40,7 +40,7 @@ Page({
   },
   click7() {
     wx.navigateTo({
-      url: '../news/news',
+      url: '../first/first',
     })
   },
   click8() {

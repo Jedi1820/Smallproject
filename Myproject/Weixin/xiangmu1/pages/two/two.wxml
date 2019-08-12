@@ -1,0 +1,9 @@
+<!--pages/two/two.wxml-->
+<view  class="baseview">
+     <input type='text' placeholder='请输入用户姓名:' class="inputview"  bindinput='nameinput'></input>
+     <input type='password' placeholder='请输入用户密码:'  bindinput='pwdinput' class="inputview"></input>
+     <input type='text' placeholder='请输入用户性别:'  bindinput='sexinput' class="inputview"></input>
+     <input type='text' placeholder='请输入出生年月:'  bindinput='birthdayinput' class="inputview"></input>
+     <input type='text' placeholder='请输入余额:'  bindinput='moneyinput' class="inputview"></input>
+     <button  type='primary'  bindtap='regclick'>注册</button>
+</view>

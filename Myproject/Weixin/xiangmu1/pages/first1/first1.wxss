@@ -1,0 +1,69 @@
+/* pages/first/first.wxss */
+.base
+{
+  width: 100%;
+  height: 100vh;
+}
+.top
+{
+  width: 100%;
+  height: 40%;
+}
+.sw
+{
+  width: 100%;
+  height: 100%;
+  /* background-color: blue; */
+}
+.img
+{
+  width: 100%;
+  height: 100%;
+}
+.mid
+{
+  width: 100%;
+  height: 50%;
+  /* border: 1px solid red; */
+}
+.inp
+{
+  width: 100%;
+  height: 60%;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ip1
+{
+  width: 80%;
+  height: 30%;
+  border: 1px solid blue;
+  margin: 8px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  opacity: 0.8;
+}
+.bt
+{
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.btn
+{
+  width: 30%;
+  height: 50px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.8;
+  letter-spacing: 2px;
+}
